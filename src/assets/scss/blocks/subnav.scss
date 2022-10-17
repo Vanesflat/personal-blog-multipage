@@ -1,0 +1,32 @@
+.subnav {
+  display: none;
+  background-color: $blue;
+  width: 16.5rem;
+  padding: .5rem 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+
+  &__link {
+    display: block;
+    padding: .45rem 1.2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $white;
+    transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+
+    &:hover {
+      background-color: darken($blue, 5%);
+    }
+  }
+}
