@@ -1,0 +1,79 @@
+.add-post {
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+  background-color: $secondary;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__textarea {
+    display: block;
+    width: 70%;
+    height: 2.6rem;
+
+    border: none;
+    background-color: transparent;
+    resize: none;
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: $white;
+
+    &::placeholder {
+      color: #d2d2d2;
+    }
+  }
+
+  &__form-actions {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__file,
+  &__send {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+  }
+
+  &__file {
+    background: #EBEBEB url(../images/add-photo.svg) center no-repeat;
+
+    input {
+      display: none;
+    }
+
+    &:hover {
+      background-color: darken(#EBEBEB, 10%);
+    }
+  }
+
+  &__send {
+    background-color: $blue;
+    border: none;
+
+    &:hover {
+      background-color: darken($blue, 5%);
+    }
+  }
+}
