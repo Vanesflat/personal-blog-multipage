@@ -1,0 +1,37 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  gap: 1rem;
+
+  &__item {
+    display: flex;
+    text-align: center;
+  }
+
+  &__link {
+    line-height: 4rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    background: #0D0D0D;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    color: $white;
+    text-decoration: none;
+    transition: background-color .3s ease;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+
+    &:hover {
+      background-color: lighten(#0D0D0D, 2%);
+    }
+
+    &.active {
+      background-color: $blue;
+      box-shadow: 0px 0px 10px rgba($blue, 0.15);
+    }
+  }
+}
