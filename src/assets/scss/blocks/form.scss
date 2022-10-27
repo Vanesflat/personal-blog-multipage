@@ -3,12 +3,16 @@
   &__group {
     margin-bottom: 1.5rem;
     position: relative;
+
+    &--md {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__control {
     display: block;
     width: 100%;
-    padding: .5rem 0;
+    padding: .5rem 0 .75rem;
     background: none;
     border: none;
     border-bottom: 1px solid #3f3f3f;
