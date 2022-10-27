@@ -39,4 +39,16 @@
       background-color: darken($blue, 5%);
     }
   }
+
+  &--rounded {
+    border-radius: .41em;
+    -webkit-border-radius: .41rem;
+    -moz-border-radius: .41rem;
+    -ms-border-radius: .41rem;
+    -o-border-radius: .41rem;
+  }
+
+  &--sm {
+    padding: 0.7em 1.25em;
+  }
 }
