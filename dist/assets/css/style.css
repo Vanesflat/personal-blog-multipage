@@ -452,13 +452,24 @@ body {
 }
 
 .page {
+    min-height: 100vh;
     overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .page__title {
     margin-bottom: 3rem;
     font-size: 2.1rem;
     color: #ffffff;
+}
+
+.page__title--center {
+    text-align: center;
 }
 
 .header {
@@ -1374,6 +1385,34 @@ body {
     -moz-transition: width 0.2s linear;
     -ms-transition: width 0.2s linear;
     -o-transition: width 0.2s linear;
+}
+
+.form__footer-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.form__footer-list a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.form__footer-list a:hover {
+    text-decoration: underline;
+}
+
+.form__footer--center {
+    text-align: center;
+}
+
+.form--auth {
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .work {
