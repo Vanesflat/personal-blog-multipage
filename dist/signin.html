@@ -13,7 +13,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="description" content="">
   
-  <title>Profile</title>
+  <title>Signin</title>
 </head>
 
 <body>
@@ -111,46 +111,31 @@
     <main class="main">
       <div class="container">
         
+        <h1 class="page__title page__title--center">Вход</h1>
         
-        <h1 class="page__title">Профиль</h1>
-        
-        <form class="form" action="/" method="post">
-          <div class="cabinet">
-            <div class="cabinet__form">
-              <div class="form__group form__group--md">
-                <input class="form__control" type="text" placeholder="Ваше имя" value="Дмитрий Валак">
-                <span class="form__line"></span>
-              </div>
-        
-              <div class="form__group form__group--md">
-                <input class="form__control" type="email" placeholder="Ваш e-mail" value="alex.provo@mail.com">
-                <span class="form__line"></span>
-              </div>
-        
-              <div class="form__group form__group--md">
-                <input class="form__control" type="password" placeholder="Новый пароль">
-                <span class="form__line"></span>
-              </div>
-        
-              <div class="form__group form__group--md">
-                <input class="form__control" type="password" placeholder="Подтвердите пароль">
-                <span class="form__line"></span>
-              </div>
-        
-        
-            </div>
-            <div class="cabinet__avatar">
-              <img src="assets/images/profile-avatar.jpg" alt="">
-        
-              <label class="cabinet__file">
-                <input type="file">
-                выбрать аватар
-              </label>
-            </div>
+        <form class="form form--auth" action="/" method="post">
+          <div class="form__group form__group--md">
+            <input class="form__control" type="email" placeholder="Ваш e-mail">
+            <span class="form__line"></span>
           </div>
         
-          <div class="form__footer">
-            <button class="btn btn--blue btn--rounded btn--sm" type="submit">Сохранить</button>
+          <div class="form__group form__group--md">
+            <input class="form__control" type="password" placeholder="Пароль">
+            <span class="form__line"></span>
+          </div>
+        
+          <div class="form__footer form__footer--center">
+            <div class="form__group form__group--md">
+              <button class="btn btn--blue btn--rounded btn--sm" type="submit">Войти</button>
+            </div>
+            <ul class="form__footer-list">
+              <li>
+                <a href="signup.html">регистрация</a>
+              </li>
+              <li>
+                <a href="reset.html">восстановить</a>
+              </li>
+            </ul>
           </div>
         </form>
       </div>

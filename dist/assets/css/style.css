@@ -1310,10 +1310,14 @@ body {
     position: relative;
 }
 
+.form__group--md {
+    margin-bottom: 2.5rem;
+}
+
 .form__control {
     display: block;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.75rem;
     background: none;
     border: none;
     border-bottom: 1px solid #3f3f3f;
@@ -1457,4 +1461,41 @@ body {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+
+.cabinet {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 11rem;
+}
+
+.cabinet__form {
+    width: 34rem;
+}
+
+.cabinet__avatar {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.cabinet__avatar img {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+    font-size: 1.4rem;
+    color: #3137C9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cabinet__file input {
+    display: none;
+}
+
+.cabinet__file:hover {
+    text-decoration: none;
 }

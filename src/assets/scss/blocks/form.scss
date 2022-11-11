@@ -54,4 +54,32 @@
     -ms-transition: width .2s linear;
     -o-transition: width .2s linear;
   }
+
+  &__footer {
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 1.2rem;
+      line-height: 1.2;
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &--auth {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
