@@ -22,7 +22,8 @@
   -ms-transition: background-color .2s linear;
   -o-transition: background-color .2s linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
@@ -30,7 +31,8 @@
     background-color: $red;
     box-shadow: 0px 7px 17px -10px rgba($red, 0.35);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($red, 5%);
     }
   }
@@ -39,7 +41,8 @@
     background-color: $blue;
     box-shadow: 0px 7px 17px -10px rgba($blue, 0.35);
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($blue, 5%);
     }
   }
