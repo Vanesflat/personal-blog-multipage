@@ -8,10 +8,16 @@
   left: 0;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 5px 5px;
-  -webkit-border-radius: 0 0 5px 5px;
-  -moz-border-radius: 0 0 5px 5px;
-  -ms-border-radius: 0 0 5px 5px;
-  -o-border-radius: 0 0 5px 5px;
+
+  @include breakpoint($tabled-bp) {
+    position: static;
+
+    width: 100%;
+    padding-left: 1rem;
+
+    background-color: transparent;
+    box-shadow: none;
+  }
 
   &__link {
     display: block;
@@ -20,13 +26,20 @@
     text-decoration: none;
     color: $white;
     transition: background-color .2s ease-in-out;
-    -webkit-transition: background-color .2s ease-in-out;
-    -moz-transition: background-color .2s ease-in-out;
-    -ms-transition: background-color .2s ease-in-out;
-    -o-transition: background-color .2s ease-in-out;
 
     &:hover {
       background-color: darken($blue, 5%);
+    }
+
+    @include breakpoint($tabled-bp) {
+      padding-left: 0;
+      padding-right: 0;
+
+      font-size: 1.5rem;
+
+      &:hover {
+        background: none;
+      }
     }
   }
 }

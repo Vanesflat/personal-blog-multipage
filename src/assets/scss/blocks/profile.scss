@@ -1,5 +1,14 @@
 .profile {
 
+  margin-top: -5rem;
+
+  @include breakpoint($tabled-bp) {
+    margin-top: -1rem;
+    position: relative;
+
+    border-bottom: 1px solid #1C1C1C;
+  }
+
   &__avatar {
     display: block;
     width: 10rem;
@@ -9,24 +18,48 @@
 
     border: 2px solid $white;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+
+    @include breakpoint($tabled-bp) {
+      width: 6.5rem;
+      height: 6.5rem;
+
+      margin-left: 0;
+
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include breakpoint($tabled-bp) {
+      text-align: left;
+
+      padding-top: 2rem;
+      padding-left: 8rem;
+    }
   }
 
   &__name {
     font-size: 1.8rem;
-    text-align: center;
+
+    @include breakpoint($tabled-bp) {
+      font-size: 1.5rem;
+    }
   }
 
   &__prof {
-    margin-bottom: 2rem;
     font-weight: 300;
     font-size: 1.4rem;
-    text-align: center;
     color: #DEDEDE;
+
+    @include breakpoint($tabled-bp) {
+      font-size: 1.2rem;
+    }
   }
 
   &__text {
@@ -37,5 +70,9 @@
 
     border-top: 1px solid #1C1C1C;
     border-bottom: 1px solid #1C1C1C;
+
+    @include breakpoint($tabled-bp) {
+      display: none;
+    }
   }
 }

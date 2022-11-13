@@ -11,13 +11,25 @@
   right: 0;
   z-index: $z-index-header;
 
+  @include breakpoint($tabled-bp) {
+    width: 100%;
+  }
+
   &__left {
     width: 60%;
+
+    @include breakpoint($tabled-bp) {
+      width: 40%;
+    }
   }
 
   &__right {
     width: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include breakpoint($tabled-bp) {
+      width: 60%;
+    }
   }
 }

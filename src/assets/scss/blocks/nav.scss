@@ -1,7 +1,24 @@
 .nav {
 
+  &--mobile {
+    display: none;
+    margin: 3rem 0;
+  }
+
+  @include breakpoint($tabled-bp) {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
   &__list {
     display: flex;
+
+    @include breakpoint($tabled-bp) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -16,6 +33,14 @@
         display: block;
       }
     }
+
+    @include breakpoint($tabled-bp) {
+      &:hover {
+        .nav__link {
+          background: none;
+        }
+      }
+    }
   }
 
   &__link {
@@ -27,10 +52,7 @@
     color: $white;
     text-decoration: none;
     transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    -o-transition: all .2s linear;
+
 
     &.has-subnav {
       position: relative;
@@ -47,11 +69,14 @@
         top: 50%;
         right: 1.35rem;
         transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
       }
+    }
+
+    @include breakpoint($tabled-bp) {
+      padding-left: 0;
+      padding-right: 0;
+
+      font-size: 1.6rem;
     }
   }
 }
