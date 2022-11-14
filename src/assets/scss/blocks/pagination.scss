@@ -4,6 +4,10 @@
   margin-top: 8rem;
   gap: 1rem;
 
+  @include breakpoint($mobile-bp) {
+    margin-top: 5rem;
+  }
+
   &__item {
     display: flex;
     text-align: center;

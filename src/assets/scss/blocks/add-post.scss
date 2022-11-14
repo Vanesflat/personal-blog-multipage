@@ -4,10 +4,10 @@
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
   background-color: $secondary;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+
+  @include breakpoint($mobile-bp) {
+    padding: 1.5rem;
+  }
 
   &__form {
     display: flex;
@@ -45,16 +45,13 @@
     width: 4.4rem;
     height: 4.4rem;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     cursor: pointer;
     transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
+
+    @include breakpoint($mobile-bp) {
+      width: 3.7rem;
+      height: 3.7rem;
+    }
   }
 
   &__file {

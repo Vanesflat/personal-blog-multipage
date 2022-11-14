@@ -6,6 +6,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include breakpoint($mobile-bp) {
+      flex-direction: column;
+    }
+
     &-item {
       width: 50%;
       margin-bottom: 2.5rem;

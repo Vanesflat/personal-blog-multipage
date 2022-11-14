@@ -1,14 +1,26 @@
 .cabinet {
   display: flex;
-  gap: 11rem;
+  gap: 2rem;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+  }
 
   &__form {
     width: 34rem;
+
+    @include breakpoint($mobile-bp) {
+      order: 2;
+    }
   }
 
   &__avatar {
     flex-grow: 1;
 
+    @include breakpoint($mobile-bp) {
+      order: 1;
+      align-self: center;
+    }
 
     img {
       display: block;
